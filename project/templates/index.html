@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chap3 作业</title>
+</head>
+
+<body>
+  <h1 align = 'center'>低配版天气查询系统</h1>
+  <!--预留位置设置图片-->
+  <form align = 'center' action="/user_request" method="get">
+    <!--这里开始创建输入框,get方法用来请求访问已被识别的资源-->
+    请输入您想查询天气的城市：
+    <input type="text" name="city">
+    <input type="submit" name="query"value="查询">
+    <input type="submit" name="history"value="历史">
+    <input type="submit" name="help"value="帮助">
+  </form>
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>
